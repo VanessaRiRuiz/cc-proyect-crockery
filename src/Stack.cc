@@ -64,18 +64,14 @@ void Stack::Print()
     std::cout << "Crockery Italian Restaurant:"<< std::endl;
     std::cout << std::endl;
 
-    
-
     while (current)
     {
-      std::cout << "Material: " << current->GetList()->GetType() << std::endl;
       std::cout << "Crockery: " << current->GetList()->GetCrockery() << std::endl;
       std::cout << "Amount: " << current->GetList()->GetAmount() << std::endl;
       std::cout << std::endl;
       current = current->next;
-      
     }
-
+    
 
     
   }
