@@ -5,22 +5,22 @@
 int main()
 {
 
-  List* type1{new List("Ceramics", "Bowl", 150)};
+  List* object1{new List("Ceramics", "Bowl", 150)};
 
-  List* type2{new List("Iron", "Forks and spoons", 300)};
+  List* object2{new List("Iron", "Forks and spoons", 300)};
 
-  List* type3{new List("Glass", "Glass", 280)};
+  List* object3{new List("Glass", "Glass", 280)};
 
-  List* type4{new List("Porcelain ", "Salad plate", 150)};
+  List* object4{new List("Porcelain ", "Salad plate", 150)};
 
   Stack* stack{new Stack()};
-  stack->Push(type1);
-  stack->Push(type2);
-  stack->Push(type3);
-  stack->Push(type4);
+  stack->Push(object1);
+  stack->Push(object2);
+  stack->Push(object3);
+  stack->Push(object4);
   stack->Print();
 
-  stack->Pop();
+  stack->Pop(); //borrar el primero
   stack->Print();
 
   std::cin.get();

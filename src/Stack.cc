@@ -61,8 +61,10 @@ void Stack::Print()
   {
     Node* current{head};
 
-    std::cout << "Crockery List:"<< std::endl;
+    std::cout << "Crockery Italian Restaurant:"<< std::endl;
     std::cout << std::endl;
+
+    
 
     while (current)
     {
@@ -71,7 +73,10 @@ void Stack::Print()
       std::cout << "Amount: " << current->GetList()->GetAmount() << std::endl;
       std::cout << std::endl;
       current = current->next;
+      
     }
+
+
     
   }
 }
